@@ -1,0 +1,34 @@
+/*기본적으로 적용 되어있는 기본 스타일을 제거*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{list-style: none;}
+
+a{
+    color:inherit;
+    text-decoration:inherit;
+}
+
+/* ul li a{
+    color: #000;
+} */
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+address{
+    font-style: inherit;
+}
+
+img{
+    max-width: 100%;
+}
+
+table{
+    border-collapse: collapse;
+}

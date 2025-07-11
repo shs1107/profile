@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신혜수의 포트폴리오 </title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/tab.css">
+    <link rel="stylesheet" href="./style/mo.css">
+    <script src="./js/index.js"></script>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="icon" sizes="32x32" href="./img/favicon.png" type="image/png">
+    
+</head>
+<body>
+    <span class="btnMenu">
+        <img src="./img/heart.png" alt="메뉴 버튼">
+    </span>
+    <div class="hiddenGnb">
+        <div>
+            <!-- <a href="#" class="btnClose">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 3C7.42857 3 3 7.42857 3 13C3 18.5714 7.42857 23 13 23C18.5714 23 23 18.5714 23 13C23 7.42857 18.5714 3 13 3ZM16.8571 18L13 14.1429L9.14286 18L8 16.8571L11.8571 13L8 9.14286L9.14286 8L13 11.8571L16.8571 8L18 9.14286L14.1429 13L18 16.8571L16.8571 18Z" fill="#F86565"/>
+                </svg>
+            </a> -->
+            <ul class="gnb">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#popup">POPUPS</a></li>
+                <li><a href="#banner">BANNERS</a></li>
+                <li><a href="#project">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <a href="./down/resume.zip" class="btnStyle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 3.33331H11.6667V8.33331H13.75L10 12.0833M10 3.33331H8.33333V8.33331H6.25L10 12.0833" fill="#F86565"/>
+                <path d="M10 3.33331H11.6667V8.33331H13.75L10 12.0833L6.25 8.33331H8.33333V3.33331H10Z" stroke="#F86565" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 15.8333H15" stroke="#F86565" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                DESIGN RESUME
+            </a>
+        </div>
+    </div>
+
+    <header>
+        <ul class="gnbFloat">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#popup">POPUPS</a></li>
+            <li><a href="#banner">BANNERS</a></li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <div class="resumePauseBtn on"><img src="./img/pause.png" alt="정지토글버튼"></div>
+        <div class="resumePlayBtn"><img src="./img/play.png" alt="재생토글버튼"></div>
+        <div class="swiper2 mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <a href="./down/resume.zip" class="btnStyle">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 3.33331H11.6667V8.33331H13.75L10 12.0833M10 3.33331H8.33333V8.33331H6.25L10 12.0833" fill="#F86565"/>
+                    <path d="M10 3.33331H11.6667V8.33331H13.75L10 12.0833L6.25 8.33331H8.33333V3.33331H10Z" stroke="#F86565" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 15.8333H15" stroke="#F86565" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    DESIGN RESUME
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./down/resume.zip" class="btnStyle">
+                    환영합니다.
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#project"><img src="./img/favicon.svg" alt="블룸로고">개인 프로젝트</a>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div>
+            </div>
+            <div class="swiper-pagination2"></div>
+        </div>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var mySwiper2 = new Swiper(".mySwiper2", {
+          effect: "cube",
+          grabCursor: true,
+          cubeEffect: {
+            shadow: false,
+            slideShadows: false,
+            shadowOffset: 20,
+            shadowScale: 0.5,
+          },
+          pagination: {
+            el: ".swiper-pagination2",
+          },
+        });
+      </script>
+    </header>
+
+    <main>
+        <div class="hero" id="home">
+            <!-- <img src="./img/backgroundjpg.jpg" alt="hero배경 이미지"> -->
+            <img src="./img/wave.png" alt="홀로그램 물결">
+            <!-- <img src="./img/dolphin2.png" class="dolphin" alt="홀로그램 고래"> -->
+            <div class="floatingherotxt">
+                <h1 class="ltr">깔끔하게,<br>감각적으로,<br>직관적으로.</h1>
+                <p class="ltr">
+                보는 즐거움과 쓰는 편안함을 동시에 담았습니다.<br>
+                UI/UX 디자이너 신혜수의 포트폴리오입니다.
+                </p>
+            </div>
+        </div>
+        <div class="aboutWrap">
+            <div class="about" id="about">
+                        <div class="aboutTxt">
+                            <h1 class="ltr">협업을 중요하게 생각하며,<br>
+                                다양한 팀원들과 소통하는 것을 즐깁니다.
+                                <!-- <img class="deco1" src="./img/waterball2.png" alt="홀로그램 물방울"> -->
+                                
+                                <!-- <img class="deco3" src="./img/waterball.png" alt="홀로그램 물방울"> -->
+                            </h1>
+                    <p class="ltr">서로의 아이디어를 존중하고, 긍정적인 태도로 더 나은 방향을 함께 찾아가는 것을 좋아합니다.</p>
+                    <p class="ltr">더 좋은 사용자 경험을 함께 고민하고 만들어가길 기대합니다. 즐겁고 의미 있는 프로젝트를 함께할 수 있도록
+                        언제든지 편하게 연락 주세요!</p>
+                        
+                </div>
+                <div class="aboutImgWrap">
+                    <img class="decodolphin" src="./img/dolphin2.png" alt="홀로그램 돌고래">
+                    <img class="deco2" src="./img/waterball.png" alt="홀로그램 물방울">
+                    <div class="aboutImg">
+                        <img src="./img/photo.jpg" alt="내 사진 이미지">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="skillwrap">
+            <div class="skills">
+                <div class="title">
+                    <div class="image-wrapper">
+                        <img src="./img/heart.png" alt="하트" id="rotatingImage">
+                    </div>
+                
+                    <script>
+                    const image = document.getElementById('rotatingImage');
+
+                      window.addEventListener('scroll', () => {
+                        const scrollY = window.scrollY;
+                        const rotateDeg = scrollY % 360;
+                        image.style.transform = `rotate(${rotateDeg}deg)`;
+                    });
+                    </script>
+                    <h1 class="ltr">Design & Development Skills</h1>
+                    <p class="barstyle ltr">HTML5, CSS, JavaScript, jQuery를 활용한 웹 퍼블리싱과 Figma, Photoshop, Illustrator를 이용한 UI·UX 디자인 작업을 수행할 수 있습니다. 디자인부터 구현까지 전반적인 프로세스를 이해하며, 실무에 적용할 수 있는 역량을 갖추고 있습니다.</p>
+                </div>
+                <div class="swiperwrap">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h3 class="ltr">jQuery</h3>
+                                <p class="ltr">복잡한 DOM 조작을 간결하게 처리하고, 애니메이션 효과 및 비동기 로딩을 통해 웹사이트의 기능성을 높일 수 있습니다.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="ltr">HTML5</h3>
+                                <p class="ltr">시맨틱 태그를 활용한 구조적이고 접근성 높은 웹페이지를 작성할 수 있으며, 웹 표준을 준수한 마크업을 구현할 수 있습니다.</p>
+                            </div>
+                            <div class="swiper-slide">
+                              <h3 class="ltr">CSS</h3>
+                              <p class="ltr">반응형 웹 디자인을 적용하여 다양한 디바이스에서 최적화된 UI를 구현하고, 애니메이션 및 스타일링을 활용할 수 있습니다.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="ltr">Illustrator</h3>
+                                <p class="ltr">벡터 그래픽을 활용한 로고, 아이콘, UI 요소를 제작할 수 있으며, 브랜드 아이덴티티 디자인을 효과적으로 수행할 수 있습니다.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="ltr">JavaScript</h3>
+                                <p class="ltr">HTML5, CSS, JavaScript, jQuery를 활용한 웹 퍼블리싱과 Figma, Photoshop, Illustrator를 이용한 UI·UX 디자인 작업 수행이 가능합니다.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="ltr">Figma</h3>
+                                <p class="ltr">UI·UX 디자인 및 프로토타이핑을 수행할 수 있으며, 팀원과의 실시간 협업을 통해 디자인 프로세스를 효율적으로 관리할 수 있습니다.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="ltr">Photoshop</h3>
+                                <p class="ltr">이미지 보정 및 편집을 통해 고품질의 비주얼을 제작할 수 있으며, UI 디자인 및 그래픽 요소 제작을 전문적으로 다룰 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                
+                    <!-- Swiper JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                    
+                    <!-- Initialize Swiper -->
+                    <script>
+                      var swiper = new Swiper(".mySwiper", {
+                        effect: "coverflow",
+                        grabCursor: true,
+                        centeredSlides: true,
+                        slidesPerView: "auto",
+                        coverflowEffect: {
+                          rotate: 50,
+                          stretch: 0,
+                          depth: 100,
+                          modifier: 1,
+                          slideShadows: true,
+                        },
+                        pagination: {
+                          el: ".swiper-pagination",
+                        },
+                      });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="CnC">
+            <div class="CnCTitle">
+                <h1 class="ltr">Career & Certifications</h1>
+                <!-- <img src="./img/crown.png" alt=""> -->
+                <p class="barstyle ltr">경력사항 및 취득한 자격증입니다.</p>
+            </div>
+            <div class="CnCtxt">
+                <div class="Career">
+                    <div class="careerbox">
+                        <h2 class="ltr">Career</h2>
+                        <p class="barstyle ltr">그동안의 학력과 업무 경험, 자격사항을<br>
+                            간단히 정리한 커리어 소개란입니다.</p>
+                    </div>
+                    <dl class="Experi ltr">
+                            <dt>2025.02 ~ 2025.07</dt>
+                            <dd>UI/UX 웹디자이너 교육 수료</dd>
+                            <dt>2023.06 ~ 2024.11</dt>
+                            <dd>영업 업무지원,CS</dd>
+                            <dt>2021.01 ~ 2022.03</dt>
+                            <dd>회계 경리</dd>
+                            <dt>2019.09 ~ 2020.02</dt>
+                            <dd>국가지원 연구비 예산 관리</dd>
+                    </dl>
+                    <div>
+                        <h2 class="ltr">Certifications</h2>
+                        <p class="barstyle ltr">보유 중인 자격증을<br>
+                            간략하게 확인하실 수 있는 공간입니다.</p>
+                    </div>
+                    <dl class="Experi ltr">
+                            <dt>2025.06</dt>
+                            <dd>웹디자인개발기능사 자격증 취득</dd>
+                            <dt>2025.05</dt>
+                            <dd>GTQi(일러스트 자격증) 취득</dd>
+                            <dt>2025.05</dt>
+                            <dd>GTQ(포토샵 자격증) 취득</dd>
+                            <dt>2016.04</dt>
+                            <dd>전산세무 2급</dd>
+                            <dt>2016.04</dt>
+                            <dd>전산회계 1급</dd>
+                    </dl>
+                    <!-- <img class="greengirl" src="./img/90fca2e09560af3c2dd16d12ec94ab86.jpg" alt="초록배경소녀"> -->
+                </div>
+            </div>
+        </div>
+        <div class="popup commonFrame" id="popup">
+            <div class="pupupTitle">
+                <h1 class="ltr">Popup Design Archive</h1>
+                <p class="barstyle ltr">다양한 레이아웃과 연출을 참고해 팝업 디자인을 완성했습니다.
+                    직관적인 구조와 명확한 메시지 전달에 중점을 두었습니다.</p>
+            </div>
+            <div class="popupListFrame">
+                <ul class="popupList">
+                    <li>
+                        <figure class="ltr">
+                            <img src="./img/popup_blackfriday.jpg" alt="블랙프라이데이 팝업">
+                        </figure>
+                        <div class="txtFramePopup">
+                            <h3 class="ltr">블랙프라이데이 할인 팝업</h3>
+                            <p class="ltr">어두운 배경과 대비되는 흰색 & 빨간색 타이포그래피를 활용해, 블랙프라이데이의 강렬함과 긴급한 할인 분위기를 강조했습니다.</p>
+                            <dl class="ltr">
+                                <dt><span>제작 툴</span></dt>
+                                <dd>
+                                    <span>Illustrator</span>
+                                </dd>
+                            </dl>
+                        </div>    
+                    </li>        
+                    <li>
+                        <figure class="ltr">
+                            <img src="./img/popup_nikeAirforce.jpg" alt="나이키 에어포스 팝업">
+                        </figure>
+                        <div class="txtFramePopup">
+                            <h3 class="ltr">나이키 할인 팝업</h3>
+                            <p class="ltr">브랜드 아이덴티티를 살린 심플한 타이포그래피로 정보 전달력을 높였습니다.</p>
+                            <dl class="ltr">
+                                <dt><span>제작 툴</span></dt>
+                                <dd>
+                                    <span>Photoshop</span>
+                                </dd>
+                            </dl>
+                        </div>    
+                    </li>
+                    <li>        
+                        <figure class="ltr">
+                            <img src="./img/popup_chis.jpg" alt="겨울맞이 할인 팝업">
+                        </figure>
+                        <div class="txtFramePopup">
+                            <h3 class="ltr">겨울맞이 할인 팝업</h3>
+                            <p class="ltr">딥 레드 배경에 화이트 타이포그래피를 조합해, 겨울 시즌의 따뜻하면서도 강렬한 세일 분위기를 표현했습니다.</p>
+                            <dl class="ltr">
+                                <dt><span>제작 툴</span></dt>
+                                <dd>
+                                    <span>Illustrator</span>
+                                    <span>Photoshop</span>
+                                </dd>
+                            </dl>
+                        </div>    
+                    </li>
+                    <li>    
+                        <figure class="ltr">
+                            <img src="./img/popup_hamburger.jpg" alt="햄버거 특별행사 팝업">
+                        </figure>
+                        <div class="txtFramePopup">
+                            <h3 class="ltr">햄버거 특별행사 팝업</h3>
+                            <p class="ltr">전체적으로 컬러 대비와 정보 구조가 명확하여, 프로모션 내용을 빠르고 강력하게 인지할 수 있도록 설계된 팝업입니다.</p>
+                            <dl class="ltr">
+                                <dt><span>제작 툴</span></dt>
+                                <dd><span>Photoshop</span></dd>
+                            </dl>
+                        </div>    
+                    </li>
+                    <li>        
+                        <figure class="ltr">
+                            <img src="./img/popup_luckybox.jpg" alt="럭키박스 특별행사 팝업">
+                        </figure>
+                        <div class="txtFramePopup">
+                            <h3 class="ltr">럭키박스 특별행사 팝업</h3>
+                            <p class="ltr">전체적으로 간결하면서도 경쾌한 분위기로 이벤트의 재미와 기대감을 효과적으로 전달하고자 합니다.</p>
+                            <dl class="ltr">
+                                <dt><span>제작 툴</span></dt>
+                                <dd><span>Photoshop</span></dd>
+                            </dl>
+                        </div>    
+                    </li>
+                    <li>    
+                        <figure class="ltr">
+                            <img src="./img/아이더-윈드락-자켓.jpg" alt="아이더 윈드락 자켓 팝업">
+                        </figure>
+                        <div class="txtFramePopup">
+                            <h3 class="ltr">아이더 윈드락 자켓 팝업</h3>
+                            <p class="ltr">감각적인 자연 배경을 활용해 기능성과 스타일을 동시에 강조했습니다. 깔끔한 레이아웃과 브랜드 아이덴티티를 살려 프리미엄 아웃도어 이미지를 완성했습니다.</p>
+                            <dl class="ltr">
+                                <dt><span>제작 툴</span></dt>
+                                <dd>
+                                    <span>Illustrator</span>
+                                    <span>Photoshop</span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner commonFrame" id="banner">
+            <div class="popupTitle">
+                <h1 class="ltr">Banner Design Archive</h1>
+                <p class="barstyle ltr">브랜드 아이덴티티를 강조하면서도 시선을 끌 수 있는 디자인을 추구한 배너 아카이브입니다. 디자인마다 간단한 설명과 제작 의도를 함께 담아 이해를 도왔습니다.</p>
+            </div>
+            <div class="bannerSlide">
+                <div class="bannerstation swiper">
+                    <div class="swiper-pagination"></div>
+                    <ul class="train swiper-wrapper">
+                        <li class="swiper-slide">
+                            <figure class="ltr">
+                                <img src="./img/banner1.jpg" alt="슬라이드 블랙프라이데이 배너이미지">
+                            </figure>
+                            <div class="bannerTxt">
+                                <section class="ltr">
+                                    <h3>발렌타인데이 배너</h3>
+                                    <div class="tools">
+                                        <span>Photoshop</span>
+                                    </div>
+                                </section>
+                                <section class="ltr">
+                                    <P> 부드러운 곡선과 입체감 있는 광택 표현으로 달콤하고 고급스러운 분위기를 연출했습니다.
+                                        중앙의 황금 하트와 초콜릿 텍스처를 통해 감성적인 메시지를 직관적으로 전달합니다.</P>
+                                </section>
+                                <section class="ltr">
+                                    <dl>
+                                        <dt>TYPOGRAPHY</dt>
+                                        <dd>PRETENDARD</dd>
+                                        <dd>가나초콜릿체</dd>
+                                    </dl>
+                                </section>
+                                <section class="ltr">
+                                    <dl>
+                                        <dt>COLORS</dt>
+                                        <dd data-color="#4c2016">#4c2016</dd>
+                                        <dd data-color="#f7fa75">#f7fa75</dd>
+                                    </dl>
+                                </section>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure class="ltr">
+                                <img src="./img/banner2.jpg" alt="슬라이드 블랙프라이데이 배너이미지">
+                            </figure>
+                            <div class="bannerTxt">
+                                <section class="ltr">
+                                    <h3>아디다스 슈퍼노바 런칭 배너</h3>
+                                    <div class="tools">
+                                        <span>Photoshop</span>
+                                        <span>Illustrator</span>
+                                    </div>
+                                </section>
+                                <section class="ltr">
+                                    <P> 시원한 컬러와 유동적인 라인 그래픽으로 역동성과 가벼움을 강조한 스포츠 브랜드 배너입니다.
+                                        제품의 특징을 부각하는 실사 합성과 배경의 물결 패턴으로 몰입감을 더했습니다.</P>
+                                </section>
+                                <section class="ltr">
+                                    <dl>
+                                        <dt>TYPOGRAPHY</dt>
+                                        <dd>PRETENDARD</dd>
+                                        <dd>학교안심물결</dd>
+                                    </dl>
+                                </section>
+                                <section class="ltr">
+                                    <dl>
+                                        <dt>COLORS</dt>
+                                        <dd data-color="#086271">#086271</dd>
+                                    </dl>
+                                </section>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure class="ltr">
+                                <img src="./img/banner3.jpg" alt="슬라이드 블랙프라이데이 배너이미지">
+                            </figure>
+                            <div class="bannerTxt">
+                                <section class="ltr">
+                                    <h3>나이키 에어포스 배너</h3>
+                                    <div class="tools">
+                                        <span>Photoshop</span>
+                                        <span>Illustrator</span>
+                                    </div>
+                                </section>
+                                <section class="ltr">
+                                    <P> 대비감 있는 타이포그래피와 제품 중심 배치로 브랜드 아이덴티티를 직관적으로 표현했습니다.
+                                        그라데이션 배경과 유기적 곡선으로 트렌디하고 감각적인 분위기를 조성했습니다.</P>
+                                </section>
+                                <section>
+                                    <dl>
+                                        <dt>TYPOGRAPHY</dt>
+                                        <dd>PRETENDARD</dd>
+                                    </dl>
+                                </section>
+                                <section class="ltr">
+                                    <dl>
+                                        <dt>COLORS</dt>
+                                        <dd data-color="#e8555d">#e8555d</dd>
+                                        <dd data-color="#cb477d">#cb477d</dd>
+                                    </dl>
+                                </section>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure class="ltr">
+                                <img src="./img/banner4.jpg" alt="슬라이드 블랙프라이데이 배너이미지">
+                            </figure>
+                            <div class="bannerTxt">
+                                <section class="ltr">
+                                    <h3>블랙프라이데이 세일 배너</h3>
+                                    <div class="tools">
+                                        <span>Photoshop</span>
+                                        <span>Illustrator</span>
+                                    </div>
+                                </section>
+                                <section class="ltr">
+                                    <P> 네온사인 스타일의 타이포와 어두운 배경을 활용해 강렬한 프로모션 이미지를 완성했습니다.
+                                        컬러 포인트와 조명 효과를 통해 시각적 집중도를 극대화했습니다.</P>
+                                </section>
+                                <section class="ltr">
+                                    <dl>
+                                        <dt>TYPOGRAPHY</dt>
+                                        <dd>PRETENDARD</dd>
+                                        <dd>Swis721 BlkOul BT</dd>
+                                    </dl>
+                                </section>
+                                <section class="ltr">
+                                    <dl>
+                                        <dt>COLORS</dt>
+                                        <dd data-color="#70f9fa">#70f9fa</dd>
+                                        <dd data-color="#d210e4">#d210e4</dd>
+                                    </dl>
+                                </section>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    let bannerstation = new Swiper(".bannerstation",{
+                        loop:true,
+                        // autoplay: {
+                        // delay: 2000,
+                        // disableOnInteraction: false,
+                        // },
+                        speed:1000,
+                        pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+
+        <div class="project commonFrame" id="project">
+
+            <div class="popupTitle">
+                <h1 class="ltr">Responsive web project</h1>
+                <p class="barstyle ltr">
+                    3주간 홈페이지 디자인 프로젝트를 진행하며 와이어프레임 제작부터 시안 작성, 리디자인까지 전 과정을 직접 수행했습니다. 코딩과 디자인을 병행하여 다양한 디바이스에 최적화된 UI/UX를 구현하였습니다.
+                </p>
+            </div>
+        </div>
+        <div class="project1">
+            <ul class="stickyMenu ltr">
+                <li><a href="http://wyhs.dothome.co.kr" target="_blank">Rebranding Website</a></li>
+                <li><a href="https://www.figma.com/proto/b0VgJtFuhY3v3yQuisnkiZ/Untitled?page-id=0%3A1&node-id=1-116&p=f&viewport=660%2C104%2C0.08&t=STQVpOkD1bhljANl-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A116&show-proto-sidebar=1" target="_blank">Live Figma Preview</a></li>
+            </ul>
+            <div class="imgall">
+                <!-- 디자인 상세 이미지 -->
+                <picture>
+                    <source media="(max-width:768px)" srcset="./img/project-iloom-mo.jpg">
+                    <source media="(max-width:1024px)" srcset="./img/project-iloom-tab.jpg">
+                    <img src="./img/project-iloom-pc.jpg" alt="일룸pc버전">
+                    <!-- <img src="./img/project-iloom-tab.jpg" alt="일룸tab버전">
+                    <img src="./img/project-iloom-mo.jpg" alt="일룸mobile버전"> -->
+                </picture>
+            </div>
+        </div>
+        <div class="project2">
+            <ul class="stickyMenu2 ltr">
+                <li><a href="http://ywyshs.dothome.co.kr/" target="_blank">New Branding Website</a></li>
+                <li><a href="https://www.figma.com/proto/6vBYvUxKNXheF4voOjUkG5/Untitled?page-id=0%3A1&node-id=1-2&viewport=493%2C478%2C0.11&t=TESC0Xn4mJnrYMPP-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2" target="_blank">Live Figma Preview</a></li>
+            </ul>
+            <div class="imgall">
+                <!-- 디자인 상세 이미지 -->
+                <picture>
+                    <source media="(max-width:768px)" srcset="./img/project-hetoki-mo.jpg">
+                    <source media="(max-width:1024px)" srcset="./img/project-hetoki-tab.jpg">
+                    <img src="./img/project-hetoki-pc.jpg" alt="혜뚜기pc버전">
+                    <!-- <img src="./img/project-iloom-tab.jpg" alt="일룸tab버전">
+                    <img src="./img/project-iloom-mo.jpg" alt="일룸mobile버전"> -->
+                </picture>
+            </div>
+        </div>
+    </main>
+    <div class="contact" id="contact">
+        <img src="./img/Thankyou-for-watching.jpg" alt="Thankyou_for_watching이미지">
+    </div>
+</body>
+</html>
