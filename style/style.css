@@ -846,7 +846,6 @@ dd[data-color] span{
 
   .swiper2 {
     width: 11rem;
-    /* height: 2rem; */
     position: absolute;
     left: 96%;
     top: 384%;
@@ -855,18 +854,40 @@ dd[data-color] span{
     border-radius: 1rem;
 }
 
-  .swiper-slide {
+  .mySwiper2 .swiper-slide {
     background-position: center;
     background-size: cover;
+    height: 2rem;
+    object-fit: contain;
+
   }
 
-  .swiper-slide img{
-    /* max-width: 100%;
-    border-radius: 0.8rem; */
-    /* max-height: 2rem; */
-  }
+  .mySwiper2 .swiper-slide a {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+  .mySwiper2 .swiper-slide img {
+    background-position: center;
+    background-size: cover;
+    width: 4rem;
+    height: 3rem;
+}
+
+.mySwiper2 .swiper-slide p {
+    flex: 1;
+    height: 1.5rem;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: #A250E9;
+    justify-content: center;
+    padding-top: 0.5em;
+}
 
   .swiper-pagination2{
+    margin-top: 0.5rem;
     text-align: center;
   }
 
@@ -914,4 +935,35 @@ dd[data-color] span{
     z-index: 10000;
     border: none;
     display: none;
+}
+
+.station{
+    height: 3rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+    background: url(../img/twinkle.gif)repeat 100% 100% / cover;
+}
+
+.station section {
+    width: 105%;
+    white-space: nowrap;
+}
+
+@keyframes moveA {
+    0%{
+        transform: translateX(100%);
+    }    
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.a{
+    animation: moveA 10s linear -5s infinite;
+    font-size: 1rem;
+    color: #000;
 }
