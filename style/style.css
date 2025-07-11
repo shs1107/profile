@@ -876,12 +876,23 @@ dd[data-color] span{
     height: 3rem;
 }
 
-.mySwiper2 .swiper-slide p {
+.mySwiper2 .swiper-slide .gnbBloom{
     flex: 1;
     height: 1.5rem;
     text-align: center;
     border-radius: 2rem;
     background-color: #A250E9;
+    justify-content: center;
+    padding-top: 0.5em;
+}
+
+.mySwiper2 .swiper-slide .gnbhetoki{
+    flex: 1;
+    height: 1.5rem;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: #FFED00;
+    color: #0B3F8C;
     justify-content: center;
     padding-top: 0.5em;
 }
