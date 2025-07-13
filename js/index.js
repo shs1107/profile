@@ -71,5 +71,56 @@ document.addEventListener("DOMContentLoaded",function(){
 
     boxes.forEach(box => observer.observe(box));
 
+
+    
+const textEl = document.querySelector("#scramble");
+const originalText = textEl.textContent;
+const characters = "!@#$%^&*()_+=-?><~{}[]ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+const charsArray = [...originalText];
+
+// 글자들을 <span class="char">로 감싸고, 원래 문자도 data-original로 저장
+textEl.innerHTML = charsArray.map(char => `<span class="char" data-original="${char}">${char}</span>`).join("");
+const charEls = textEl.querySelectorAll(".char");
+
+// 마우스 근처에서 스크램블 효과 실행
+textEl.addEventListener("pointermove", (e) => {
+  charEls.forEach((el) => {
+    const rect = el.getBoundingClientRect();
+    const cx = rect.left + rect.width / 2;
+    const cy = rect.top + rect.height / 2;
+    const dx = e.clientX - cx;
+    const dy = e.clientY - cy;
+    const dist = Math.sqrt(dx * dx + dy * dy);
+
+    if (dist < 100) {
+      scramble(el);
+    }
+  });
+});
+
+// 스크램블 후 복원
+function scramble(el) {
+  // 이미 실행 중이면 다시 하지 않음
+  if (el.dataset.scrambling === "true") return;
+
+  const original = el.dataset.original;
+  const scrambleDuration = 0.6;
+  const scrambleInterval = 0.04;
+  let count = 0;
+
+  el.dataset.scrambling = "true"; // 상태 표시
+
+  const interval = setInterval(() => {
+    el.textContent = characters[Math.floor(Math.random() * characters.length)];
+    count += scrambleInterval;
+
+    if (count >= scrambleDuration) {
+      clearInterval(interval);
+      el.textContent = original;
+      el.dataset.scrambling = "false"; // 복원 완료
+    }
+  }, scrambleInterval * 1000);
+}
+
 });
 
