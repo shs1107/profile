@@ -6,6 +6,11 @@
 */
 
 @media (max-width:1400px){
+    .svg1, .svg2, .svg3, .svg4 {
+        top: 25%;
+        height: 10rem;
+        left: 0;
+    }
     .commonFrame{
         width: auto;
         margin: 0;
@@ -149,6 +154,12 @@
 
 
 @media (max-width:1024px){
+    .svg1, .svg2, .svg3, .svg4 {
+        top: 20%;
+        height: 10rem;
+        left: -10%;
+    }
+
     .txtFramePopup dl {
         display: flex;
     }

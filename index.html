@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,21 +91,28 @@
                 </a>
               </div>
             </div>
-            <div class="swiper-pagination2"></div>
+            <!-- <div class="swiper-pagination2"></div> -->
         </div>
     
       <!-- Initialize Swiper -->
       <script>
-        var mySwiper2 = new Swiper(".mySwiper2", {
-          effect: "cube",
-          grabCursor: true,
-          cubeEffect: {
-            shadow: false,
-            slideShadows: false,
-          },
-          pagination: {
-            el: ".swiper-pagination2",
-          },
+        const mySwiper2 = new Swiper(".mySwiper2", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+          shadow: false,
+          slideShadows: false,
+        },
+        //   pagination: {
+        //     el: ".swiper-pagination2",
+        //   },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter:true
+        },
+        loop:true,
+            
         });
       </script>
     </header>
@@ -127,20 +134,24 @@
         <div class="aboutWrap">
             <div class="about" id="about">
                 <div class="aboutTxt">
-                            <h1 class="ltr">협업을 중요하게 생각하며,<br>
+                    <div class="text-block">
+                        <div class="scramble-wrap">
+                          <h1 id="scramble">협업을 중요하게 생각하며,
+                            다양한 팀원들과 소통하는 것을 즐깁니다.</h1>
+                        </div>
+                    </div>
+                            <!-- <h1 class="ltr">협업을 중요하게 생각하며,<br>
                                 다양한 팀원들과 소통하는 것을 즐깁니다.
-                                <!-- <img class="deco1" src="./img/waterball2.png" alt="홀로그램 물방울"> -->
-                                
-                                <!-- <img class="deco3" src="./img/waterball.png" alt="홀로그램 물방울"> -->
-                            </h1>
-                                <!-- <p class="ltr">서로의 아이디어를 존중하고, 긍정적인 태도로 더 나은 방향을 함께 찾아가는 것을 좋아합니다.</p>
-                                <p class="ltr">더 좋은 사용자 경험을 함께 고민하고 만들어가길 기대합니다. 즐겁고 의미 있는 프로젝트를 함께할 수 있도록
-                                언제든지 편하게 연락 주세요!</p> -->
-                            <div class="text-block">
-                                <p id="scramble">서로의 아이디어를 존중하고, 긍정적인 태도로 더 나은 방향을 함께 찾아가는 것을 좋아합니다.<br>
-                                더 좋은 사용자 경험을 함께 고민하고 만들어가길 기대합니다. 즐겁고 의미 있는 프로젝트를 함께할 수 있도록 언제든지 편하게 연락 주세요!</p>
-                            </div>
-                        
+                            </h1> -->
+                    <div class="aboutTxtP">
+                            <p class="ltr">서로의 아이디어를 존중하고, 긍정적인 태도로 더 나은 방향을 함께 찾아가는 것을 좋아합니다.</p>
+                            <p class="ltr">더 좋은 사용자 경험을 함께 고민하고 만들어가길 기대합니다. 즐겁고 의미 있는 프로젝트를 함께할 수 있도록
+                            언제든지 편하게 연락 주세요!</p>
+                        <!-- <div class="text-block">
+                            <p id="scramble">서로의 아이디어를 존중하고, 긍정적인 태도로 더 나은 방향을 함께 찾아가는 것을 좋아합니다.<br>
+                            더 좋은 사용자 경험을 함께 고민하고 만들어가길 기대합니다. 즐겁고 의미 있는 프로젝트를 함께할 수 있도록 언제든지 편하게 연락 주세요!</p>
+                        </div> -->
+                    </div>
                 </div>
                 <div class="aboutImgWrap">
                     <img class="decodolphin" src="./img/dolphin2.png" alt="홀로그램 돌고래">
@@ -155,7 +166,7 @@
         <div class="skillwrap">
             <div class="skills">
                 <div class="title">
-                    <div class="image-wrapper">
+                    <!-- <div class="image-wrapper">
                         <img src="./img/heart.png" alt="하트" id="rotatingImage">
                     </div>
                 
@@ -167,7 +178,7 @@
                         const rotateDeg = scrollY % 360;
                         image.style.transform = `rotate(${rotateDeg}deg)`;
                     });
-                    </script>
+                    </script> -->
                     <h1 class="ltr">Design & Development Skills</h1>
                     <p class="barstyle ltr">HTML5, CSS, JavaScript, jQuery를 활용한 웹 퍼블리싱과 Figma, Photoshop, Illustrator를 이용한 UI·UX 디자인 작업을 수행할 수 있습니다. 디자인부터 구현까지 전반적인 프로세스를 이해하며, 실무에 적용할 수 있는 역량을 갖추고 있습니다.</p>
                 </div>
@@ -240,37 +251,66 @@
             <div class="CnCtxt">
                 <div class="Career">
                     <div class="careerbox">
+                        <img src="./img/svg.png" class="svg1" alt="">
+                        <rect class="svgBox1" x="0" y="35" width="30" height="30" rx="2" />
                         <h2 class="ltr">Career</h2>
                         <p class="barstyle ltr">그동안의 학력과 업무 경험, 자격사항을<br>
                             간단히 정리한 커리어 소개란입니다.</p>
+                        <!-- <svg id="svg1" viewBox="0 0 100 100">
+                            <rect class="svgBox1" fill="#28a92b" x="0" y="35" width="30" height="30" rx="2" />
+                        </svg> -->
+                        
                     </div>
-                    <dl class="Experi ltr">
-                            <dt>2025.02 ~ 2025.07</dt>
-                            <dd>UI/UX 웹디자이너 교육 수료</dd>
-                            <dt>2023.06 ~ 2024.11</dt>
-                            <dd>영업 업무지원,CS</dd>
-                            <dt>2021.01 ~ 2022.03</dt>
-                            <dd>회계 경리</dd>
-                            <dt>2019.09 ~ 2020.02</dt>
-                            <dd>국가지원 연구비 예산 관리</dd>
+
+                    <div class="Experi1Wrap">
+                    <img src="./img/svg.png" class="svg2" alt="">
+                    <dl class="Experi1 ltr">
+                        <dt>2025.02 ~ 2025.07</dt>
+                        <dd>UI/UX 웹디자이너 교육 수료</dd>
+                        <dt>2023.06 ~ 2024.11</dt>
+                        <dd>영업 업무지원,CS</dd>
+                        <dt>2021.01 ~ 2022.03</dt>
+                        <dd>회계 경리</dd>
+                        <dt>2019.09 ~ 2020.02</dt>
+                        <dd>국가지원 연구비 예산 관리</dd>
+                        <!-- <svg id="svg2" viewBox="0 0 100 100">
+                            <rect class="svgBox2" fill="#28a92b" x="0" y="35" width="30" height="30" rx="2" />
+                        </svg> -->
                     </dl>
-                    <div>
+                    </div>
+                    
+                    
+
+                    <div class="Certifi">
+                        <img src="./img/svg.png"  class="svg3" alt="">
                         <h2 class="ltr">Certifications</h2>
                         <p class="barstyle ltr">보유 중인 자격증을<br>
                             간략하게 확인하실 수 있는 공간입니다.</p>
+                        <!-- <svg id="svg3" viewBox="0 0 100 100">
+                            <rect class="svgBox3" fill="#28a92b" x="0" y="35" width="30" height="30" rx="2" />
+                        </svg> -->
                     </div>
-                    <dl class="Experi ltr">
-                            <dt>2025.06</dt>
-                            <dd>웹디자인개발기능사 자격증 취득</dd>
-                            <dt>2025.05</dt>
-                            <dd>GTQi(일러스트 자격증) 취득</dd>
-                            <dt>2025.05</dt>
-                            <dd>GTQ(포토샵 자격증) 취득</dd>
-                            <dt>2016.04</dt>
-                            <dd>전산세무 2급</dd>
-                            <dt>2016.04</dt>
-                            <dd>전산회계 1급</dd>
-                    </dl>
+
+                    <div class="Experi2Wrap">
+                        <img src="./img/svg.png" class="svg4" alt="">
+                        <dl class="Experi2 ltr">
+                                <dt>2025.06</dt>
+                                <dd>웹디자인개발기능사 자격증 취득</dd>
+                                <dt>2025.05</dt>
+                                <dd>GTQi(일러스트 자격증) 취득</dd>
+                                <dt>2025.05</dt>
+                                <dd>GTQ(포토샵 자격증) 취득</dd>
+                                <dt>2016.04</dt>
+                                <dd>전산세무 2급</dd>
+                                <dt>2016.04</dt>
+                                <dd>전산회계 1급</dd>
+                                <!-- <svg id="svg4" viewBox="0 0 100 100">
+                                    <rect class="svgBox4" fill="#28a92b" x="0" y="35" width="30" height="30" rx="2" />
+                                </svg> -->
+                        </dl>
+                    </div>
+
+                    
                     <!-- <img class="greengirl" src="./img/90fca2e09560af3c2dd16d12ec94ab86.jpg" alt="초록배경소녀"> -->
                 </div>
             </div>
@@ -536,7 +576,7 @@
                 </p>
             </div>
         </div>
-        <div class="project1">
+        <div id="project1">
             <ul class="stickyMenu ltr">
                 <li><a href="http://wyhs.dothome.co.kr" target="_blank">Rebranding Website</a></li>
                 <li><a href="https://www.figma.com/proto/b0VgJtFuhY3v3yQuisnkiZ/Untitled?page-id=0%3A1&node-id=1-116&p=f&viewport=660%2C104%2C0.08&t=STQVpOkD1bhljANl-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A116&show-proto-sidebar=1" target="_blank">Live Figma Preview</a></li>
@@ -552,7 +592,7 @@
                 </picture>
             </div>
         </div>
-        <div class="project2">
+        <div id="project2">
             <ul class="stickyMenu2 ltr">
                 <li><a href="http://ywyshs.dothome.co.kr/" target="_blank">New Branding Website</a></li>
                 <li><a href="https://www.figma.com/proto/6vBYvUxKNXheF4voOjUkG5/Untitled?page-id=0%3A1&node-id=1-2&viewport=493%2C478%2C0.11&t=TESC0Xn4mJnrYMPP-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2" target="_blank">Live Figma Preview</a></li>
@@ -570,7 +610,16 @@
         </div>
     </main>
     <div class="contact" id="contact">
-        <img src="./img/Thankyou-for-watching.jpg" alt="Thankyou_for_watching이미지">
+        <picture>
+          <source media="(max-width: 450px)" srcset="./img/Thankyou-for-watching-mo2.jpg">
+          <source media="(max-width: 767px)" srcset="./img/Thankyou-for-watching-mo.jpg">
+          <source media="(max-width: 1024px)" srcset="./img/Thankyou-for-watching-tab.jpg">
+          <!-- 기본 PC 이미지 (넓은 화면용) -->
+          <img src="./img/Thankyou-for-watching-pc.jpg" alt="Thank you for watching" class="responsive-img">
+        </picture>
     </div>
 </body>
+
+
+
 </html>

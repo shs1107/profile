@@ -122,5 +122,90 @@ function scramble(el) {
   }, scrambleInterval * 1000);
 }
 
+//  별 여러 개 생성 
+  const count = 1000;
+  for (let i = 0; i < count; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+
+    // 랜덤 크기
+    const size = Math.random() * 2 + 5;
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+
+    // 문서 전체 높이 기준 랜덤 위치
+    const bodyHeight = document.body.scrollHeight;
+    star.style.top = `${Math.random() * bodyHeight}px`;
+    star.style.left = `${Math.random() * 90}vw`;
+
+    // 애니메이션 딜레이
+    star.style.animationDelay = `${Math.random() * 2}s`;
+
+    // 추가
+    document.body.appendChild(star);
+  }
+
+  //resumeToggleBtn 
+
+  const pauseBtn = document.querySelector('.resumePauseBtn');
+  const playBtn = document.querySelector('.resumePlayBtn');
+
+  pauseBtn.addEventListener('click', () => {
+    mySwiper2.autoplay.stop(); // ⛔ 정지
+    pauseBtn.classList.remove('on');
+    playBtn.classList.add('on');
+  });
+
+  playBtn.addEventListener('click', () => {
+    mySwiper2.autoplay.start(); // ▶️ 재생
+    playBtn.classList.remove('on');
+    pauseBtn.classList.add('on');
+  });
+
+
+//skills, Career, certification
+
+  gsap.to(".svg1", { 
+    duration: 2,
+    x: 100, // use transform shorthand (this is now using SVG units not px, the SVG viewBox is 100 units wide)
+    xPercent: 50,
+    // or target SVG attributes
+    attr: {
+      fill: '#8d3dae',
+      rx: 50,
+    },
+  });
+  // gsap.to(".svgBox2", { 
+  //   duration: 2,
+  //   x: 100, // use transform shorthand (this is now using SVG units not px, the SVG viewBox is 100 units wide)
+  //   xPercent: 100,
+  //   // or target SVG attributes
+  //   attr: {
+  //     fill: '#8d3dae',
+  //     rx: 50, 
+  //   },
+  // });
+  // gsap.to(".svgBox3", { 
+  //   duration: 2,
+  //   x: 100, // use transform shorthand (this is now using SVG units not px, the SVG viewBox is 100 units wide)
+  //   xPercent: 100,
+  //   // or target SVG attributes
+  //   attr: {
+  //     fill: '#8d3dae',
+  //     rx: 50, 
+  //   },
+  // });
+  // gsap.to(".svgBox4", { 
+  //   duration: 2,
+  //   x: 100, // use transform shorthand (this is now using SVG units not px, the SVG viewBox is 100 units wide)
+  //   xPercent: 100,
+  //   // or target SVG attributes
+  //   attr: {
+  //     fill: '#8d3dae',
+  //     rx: 50, 
+  //   },
+  // });
+
+
 });
 
